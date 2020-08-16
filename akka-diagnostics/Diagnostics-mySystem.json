@@ -1,0 +1,320 @@
+{
+  "start-time" : "2020-02-04T07:35:41.346",
+  "akka-version" : "2.6.1",
+  "akka-diagnostics-version" : "1.1.12",
+  "akka-http-version" : "10.1.11",
+  "classpath" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/tools.jar:/Users/nolangrace/Documents/Github/akka-playground/target/scala-2.12/classes/:/Users/nolangrace/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/Users/nolangrace/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.2.jar:/Users/nolangrace/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar:/Users/nolangrace/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-protobuf-v3_2.12/jars/akka-protobuf-v3_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.1.11.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-http_2.12/jars/akka-http_2.12-10.1.11.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.1.11.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-actor-typed_2.12/jars/akka-actor-typed_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.4.1.jar:/Users/nolangrace/.ivy2/cache/com.lightbend.akka/akka-diagnostics_2.12/jars/akka-diagnostics_2.12-1.1.12.jar:/Users/nolangrace/.ivy2/cache/com.github.alexandrnikitin/bloom-filter_2.12/jars/bloom-filter_2.12-0.11.0.jar:/Users/nolangrace/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/Users/nolangrace/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-3.10.0.jar:/Users/nolangrace/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/Users/nolangrace/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/Users/nolangrace/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.3.jar:/Users/nolangrace/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.29.jar:/Applications/IntelliJ%20IDEA%20CE.app/Contents/lib/idea_rt.jar",
+  "configuration-warnings" : [],
+  "system-metrics" : {
+    "heap-init" : 536870912,
+    "heap-max" : 7635730432,
+    "heap-used" : 22860888,
+    "heap-committed" : 510132224,
+    "os-processors" : 12,
+    "mem-pool-0" : {
+      "name" : "Code Cache",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 251658240,
+      "used" : 7498368,
+      "committed" : 7536640
+    },
+    "mem-pool-1" : {
+      "name" : "Metaspace",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : -1,
+      "used" : 25788264,
+      "committed" : 27131904
+    },
+    "mem-pool-2" : {
+      "name" : "Compressed Class Space",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 3553376,
+      "committed" : 3801088
+    },
+    "mem-pool-3" : {
+      "name" : "PS Eden Space",
+      "type" : "Heap memory",
+      "init" : 134742016,
+      "max" : 2840592384,
+      "used" : 10191000,
+      "committed" : 257425408
+    },
+    "mem-pool-4" : {
+      "name" : "PS Survivor Space",
+      "type" : "Heap memory",
+      "init" : 22020096,
+      "max" : 10485760,
+      "used" : 1985520,
+      "committed" : 10485760
+    },
+    "mem-pool-5" : {
+      "name" : "PS Old Gen",
+      "type" : "Heap memory",
+      "init" : 358088704,
+      "max" : 5726797824,
+      "used" : 12960384,
+      "committed" : 242221056
+    }
+  },
+  "configuration" : {
+    "akka" : {
+        "http" : {
+            "client" : {
+                "connecting-timeout" : "10s",
+                "idle-timeout" : "60 s",
+                "log-unencrypted-network-bytes" : "off",
+                "parsing" : {},
+                "proxy" : {
+                    "https" : {
+                        "host" : "",
+                        "port" : 443
+                    }
+                },
+                "request-header-size-hint" : 512,
+                "socket-options" : {
+                    "so-receive-buffer-size" : "undefined",
+                    "so-reuse-address" : "undefined",
+                    "so-send-buffer-size" : "undefined",
+                    "so-traffic-class" : "undefined",
+                    "tcp-keep-alive" : "undefined",
+                    "tcp-no-delay" : "undefined",
+                    "tcp-oob-inline" : "undefined"
+                },
+                "user-agent-header" : "akka-http/10.1.11",
+                "websocket" : {
+                    "periodic-keep-alive-max-idle" : "infinite",
+                    "periodic-keep-alive-mode" : "ping"
+                }
+            },
+            "host-connection-pool" : {
+                "base-connection-backoff" : "100ms",
+                "client" : {},
+                "idle-timeout" : "30 s",
+                "max-connection-backoff" : "2 min",
+                "max-connection-lifetime" : "infinite",
+                "max-connections" : 4,
+                "max-open-requests" : 32,
+                "max-retries" : 5,
+                "min-connections" : 0,
+                "pipelining-limit" : 1,
+                "pool-implementation" : "new",
+                "response-entity-subscription-timeout" : "1.second"
+            },
+            "parsing" : {
+                "cookie-parsing-mode" : "rfc6265",
+                "error-logging-verbosity" : "full",
+                "header-cache" : {
+                    "Content-MD5" : 0,
+                    "Date" : 0,
+                    "If-Match" : 0,
+                    "If-Modified-Since" : 0,
+                    "If-None-Match" : 0,
+                    "If-Range" : 0,
+                    "If-Unmodified-Since" : 0,
+                    "User-Agent" : 32,
+                    "default" : 12
+                },
+                "ignore-illegal-header-for" : [],
+                "illegal-header-warnings" : "on",
+                "illegal-response-header-value-processing-mode" : "error",
+                "max-chunk-ext-length" : 256,
+                "max-chunk-size" : "1m",
+                "max-content-length" : "8m",
+                "max-header-count" : 64,
+                "max-header-name-length" : 64,
+                "max-header-value-length" : "8k",
+                "max-method-length" : 16,
+                "max-response-reason-length" : 64,
+                "max-to-strict-bytes" : "8m",
+                "max-uri-length" : "2k",
+                "modeled-header-parsing" : "on",
+                "tls-session-info-header" : "off",
+                "uri-parsing-mode" : "strict"
+            },
+            "server" : {
+                "backlog" : 1,
+                "bind-timeout" : "1s",
+                "default-host-header" : "",
+                "default-http-port" : 80,
+                "default-https-port" : 443,
+                "http2" : {
+                    "incoming-connection-level-buffer-size" : "10 MB",
+                    "incoming-stream-level-buffer-size" : "512kB",
+                    "log-frames" : false,
+                    "max-concurrent-streams" : 256,
+                    "outgoing-control-frame-buffer-size" : 1024,
+                    "request-entity-chunk-size" : "65536 b"
+                },
+                "idle-timeout" : "60 s",
+                "linger-timeout" : "1 min",
+                "log-unencrypted-network-bytes" : "off",
+                "max-connections" : 1,
+                "parsing" : {},
+                "pipelining-limit" : 1,
+                "preview" : {
+                    "enable-http2" : "off"
+                },
+                "raw-request-uri-header" : "off",
+                "remote-address-header" : "off",
+                "request-timeout" : "20 s",
+                "response-header-size-hint" : 512,
+                "server-header" : "akka-http/10.1.11",
+                "socket-options" : {
+                    "so-receive-buffer-size" : "undefined",
+                    "so-reuse-address" : "undefined",
+                    "so-send-buffer-size" : "undefined",
+                    "so-traffic-class" : "undefined",
+                    "tcp-keep-alive" : "undefined",
+                    "tcp-no-delay" : "undefined",
+                    "tcp-oob-inline" : "undefined"
+                },
+                "termination-deadline-exceeded-response" : {
+                    "status" : 503
+                },
+                "transparent-head-requests" : "on",
+                "verbose-error-messages" : "off",
+                "websocket" : {
+                    "periodic-keep-alive-max-idle" : "infinite",
+                    "periodic-keep-alive-mode" : "ping"
+                }
+            },
+            "version" : "10.1.11"
+        },
+        "loggers" : [
+            "akka.event.slf4j.Slf4jLogger"
+        ],
+        "logging-filter" : "akka.event.slf4j.Slf4jLoggingFilter",
+        "version" : "2.6.1"
+    },
+    "awt" : {
+        "toolkit" : "sun.lwawt.macosx.LWCToolkit"
+    },
+    "excluded-sensitive-paths" : [
+        "user.home",
+        "ftp.nonProxyHosts",
+        "user.dir",
+        "http.nonProxyHosts",
+        "socksNonProxyHosts",
+        "user.name"
+    ],
+    "file" : {
+        "encoding" : {
+            "pkg" : "sun.io"
+        },
+        "separator" : "/"
+    },
+    "ftp" : {},
+    "gopherProxySet" : "false",
+    "http" : {},
+    "java" : {
+        "awt" : {
+            "graphicsenv" : "sun.awt.CGraphicsEnvironment",
+            "printerjob" : "sun.lwawt.macosx.CPrinterJob"
+        },
+        "class" : {
+            "path" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/tools.jar:/Users/nolangrace/Documents/Github/akka-playground/target/scala-2.12/classes:/Users/nolangrace/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/Users/nolangrace/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.2.jar:/Users/nolangrace/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar:/Users/nolangrace/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-protobuf-v3_2.12/jars/akka-protobuf-v3_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.1.11.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-http_2.12/jars/akka-http_2.12-10.1.11.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.1.11.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe.akka/akka-actor-typed_2.12/jars/akka-actor-typed_2.12-2.6.1.jar:/Users/nolangrace/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.4.1.jar:/Users/nolangrace/.ivy2/cache/com.lightbend.akka/akka-diagnostics_2.12/jars/akka-diagnostics_2.12-1.1.12.jar:/Users/nolangrace/.ivy2/cache/com.github.alexandrnikitin/bloom-filter_2.12/jars/bloom-filter_2.12-0.11.0.jar:/Users/nolangrace/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/Users/nolangrace/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-3.10.0.jar:/Users/nolangrace/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/Users/nolangrace/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/Users/nolangrace/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.3.jar:/Users/nolangrace/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.29.jar:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar",
+            "version" : "52.0"
+        },
+        "endorsed" : {
+            "dirs" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/endorsed"
+        },
+        "ext" : {
+            "dirs" : "/Users/nolangrace/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"
+        },
+        "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre",
+        "io" : {
+            "tmpdir" : "/var/folders/1p/yjd_y8zx2h3510lmb1tb53wc0000gn/T/"
+        },
+        "library" : {
+            "path" : "/Users/nolangrace/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."
+        },
+        "runtime" : {
+            "name" : "Java(TM) SE Runtime Environment",
+            "version" : "1.8.0_192-b12"
+        },
+        "specification" : {
+            "name" : "Java Platform API Specification",
+            "vendor" : "Oracle Corporation",
+            "version" : "1.8"
+        },
+        "vendor" : {
+            "url" : {
+                "bug" : "http://bugreport.sun.com/bugreport/"
+            }
+        },
+        "version" : "1.8.0_192",
+        "vm" : {
+            "info" : "mixed mode",
+            "name" : "Java HotSpot(TM) 64-Bit Server VM",
+            "specification" : {
+                "name" : "Java Virtual Machine Specification",
+                "vendor" : "Oracle Corporation",
+                "version" : "1.8"
+            },
+            "vendor" : "Oracle Corporation",
+            "version" : "25.192-b12"
+        }
+    },
+    "line" : {
+        "separator" : "\n"
+    },
+    "os" : {
+        "arch" : "x86_64",
+        "name" : "Mac OS X",
+        "version" : "10.14.6"
+    },
+    "path" : {
+        "separator" : ":"
+    },
+    "sun" : {
+        "arch" : {
+            "data" : {
+                "model" : "64"
+            }
+        },
+        "boot" : {
+            "class" : {
+                "path" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/classes"
+            },
+            "library" : {
+                "path" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib"
+            }
+        },
+        "cpu" : {
+            "endian" : "little",
+            "isalist" : ""
+        },
+        "io" : {
+            "unicode" : {
+                "encoding" : "UnicodeBig"
+            }
+        },
+        "java" : {
+            "command" : "com.example.BloomFilterTest",
+            "launcher" : "SUN_STANDARD"
+        },
+        "jnu" : {
+            "encoding" : "UTF-8"
+        },
+        "management" : {
+            "compiler" : "HotSpot 64-Bit Tiered Compilers"
+        },
+        "os" : {
+            "patch" : {
+                "level" : "unknown"
+            }
+        }
+    },
+    "test" : "Hello",
+    "user" : {
+        "country" : "US",
+        "language" : "en",
+        "timezone" : ""
+    }
+}
+}
+
